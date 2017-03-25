@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Feeding &amp; Diapers App</string>
+    <string name="Feeds">Feeds</string>
+    <string name="Diapers">Diapers</string>
+    <string name="FeedMetric">Feeds / day</string>
+    <string name="DiaperMetric">Diapers / day</string>
+    <string name="Left">Left</string>
+    <string name="Right">Right</string>
+    <string name="Fromula">Formula</string>
+    <string name="NextFeeding">Next feeding from \n LEFT \n breast.</string>
+    <string name="Poo">Poo</string>
+    <string name="Pee">Pee</string>
+    <string name="PooPee">Poo&amp;Pee</string>
+    <string name="Reset">New Day</string>
+    <string name="Zero">0</string>
+    <string name="Poonum">Poos: 0</string>
+    <string name="Peenum">Pees: 0</string>
+</resources>
