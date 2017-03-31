@@ -6,200 +6,199 @@
     android:layout_height="wrap_content"
     tools:context="com.example.android.feeding_diapers_app.MainActivity">
 
-<RelativeLayout
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
-
-    <ImageView
+    <RelativeLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.6"
-        android:scaleType="centerCrop"
+        android:layout_height="wrap_content">
 
-        android:src="@drawable/background_small" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-
-
-    <LinearLayout
-        android:id="@+id/LinLay1"
-        style="@style/LinLay1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-        <LinearLayout
-            style="@style/LinLay2"
-            android:layout_width="@dimen/zero"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/Title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/Feeds" />
-
-            <TextView
-                style="@style/Metric"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/FeedMetric" />
-
-            <TextView
-                android:id="@+id/NumberOfFeeds"
-                style="@style/Num"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/Zero" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    style="@style/Button"
-                    android:layout_width="@dimen/button"
-                    android:layout_height="@dimen/button"
-                    android:background="@drawable/round_button_left"
-                    android:onClick="feedFromLeftBreast"
-                    android:text="@string/Left" />
-
-                <Button
-                    android:layout_width="@dimen/button"
-                    android:layout_height="@dimen/button"
-                    android:background="@drawable/round_button_right"
-                    android:onClick="feedFromRightBreast"
-                    android:text="@string/Right" />
-            </LinearLayout>
-
-            <Button
-                android:layout_width="@dimen/button"
-                android:layout_height="@dimen/button"
-                android:layout_gravity="center"
-                android:background="@drawable/round_button"
-                android:onClick="feedFromFormula"
-                android:text="@string/Fromula" />
-
-            <TextView
-                android:id="@+id/LeftRightBreast"
-                style="@style/BottomText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:text="@string/NextFeeding" />
-
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="@dimen/one"
+        <ImageView
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray" />
+            android:alpha="0.6"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/background_small" />
 
         <LinearLayout
-            style="@style/LinLay3"
-            android:layout_width="@dimen/zero"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/Title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/Diapers" />
-
-            <TextView
-                style="@style/Metric"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/DiaperMetric" />
-
-            <TextView
-                android:id="@+id/NumberOfDiapers"
-                style="@style/Num"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/Zero" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/LinLay1"
+                style="@style/LinLay1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    style="@style/Button"
-                    android:layout_width="@dimen/button"
-                    android:layout_height="@dimen/button"
-                    android:background="@drawable/round_button_pee"
-                    android:onClick="peeInDiaper"
-                    android:text="@string/Pee" />
 
-                <Button
-                    android:layout_width="@dimen/button"
-                    android:layout_height="@dimen/button"
-                    android:background="@drawable/round_button_poo"
-                    android:onClick="pooInDiaper"
-                    android:text="@string/Poo" />
+                <LinearLayout
+                    style="@style/LinLay2"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Feeds" />
+
+                    <TextView
+                        style="@style/Metric"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/FeedMetric" />
+
+                    <TextView
+                        android:id="@+id/NumberOfFeeds"
+                        style="@style/Num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Zero" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/Button"
+                            android:layout_width="@dimen/button"
+                            android:layout_height="@dimen/button"
+                            android:background="@drawable/round_button_left"
+                            android:onClick="feedFromLeftBreast"
+                            android:text="@string/Left" />
+
+                        <Button
+                            android:layout_width="@dimen/button"
+                            android:layout_height="@dimen/button"
+                            android:background="@drawable/round_button_right"
+                            android:onClick="feedFromRightBreast"
+                            android:text="@string/Right" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="@dimen/button"
+                        android:layout_height="@dimen/button"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_button"
+                        android:onClick="feedFromFormula"
+                        android:text="@string/Fromula" />
+
+                    <TextView
+                        android:id="@+id/LeftRightBreast"
+                        style="@style/BottomText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:text="@string/NextFeeding" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/one"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    style="@style/LinLay3"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Diapers" />
+
+                    <TextView
+                        style="@style/Metric"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/DiaperMetric" />
+
+                    <TextView
+                        android:id="@+id/NumberOfDiapers"
+                        style="@style/Num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Zero" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/Button"
+                            android:layout_width="@dimen/button"
+                            android:layout_height="@dimen/button"
+                            android:background="@drawable/round_button_pee"
+                            android:onClick="peeInDiaper"
+                            android:text="@string/Pee" />
+
+                        <Button
+                            android:layout_width="@dimen/button"
+                            android:layout_height="@dimen/button"
+                            android:background="@drawable/round_button_poo"
+                            android:onClick="pooInDiaper"
+                            android:text="@string/Poo" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="@dimen/button"
+                        android:layout_height="@dimen/button"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_button"
+                        android:onClick="pooPeeInDiaper"
+                        android:text="@string/PooPee" />
+
+
+                    <TextView
+                        android:id="@+id/NumberOfPoos"
+                        style="@style/BottomText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Poonum" />
+
+                    <TextView
+                        android:id="@+id/NumberOfPees"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Peenum" />
+
+
+                </LinearLayout>
             </LinearLayout>
 
             <Button
-                android:layout_width="@dimen/button"
-                android:layout_height="@dimen/button"
-                android:layout_gravity="center"
-                android:background="@drawable/round_button"
-                android:onClick="pooPeeInDiaper"
-                android:text="@string/PooPee" />
-
-
-            <TextView
-                android:id="@+id/NumberOfPoos"
-                style="@style/BottomText"
-                android:layout_width="match_parent"
+                style="@style/BottomButton"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:text="@string/Poonum" />
-
-            <TextView
-                android:id="@+id/NumberOfPees"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:text="@string/Peenum" />
-
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <Button
-        style="@style/BottomButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
                 android:onClick="newDay"
-        android:text="@string/Reset" />
+                android:text="@string/Reset" />
 
-</LinearLayout>
-</RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>

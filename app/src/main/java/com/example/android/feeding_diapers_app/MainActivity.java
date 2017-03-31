@@ -19,14 +19,23 @@ public class MainActivity extends AppCompatActivity {
     static final String DIAPERS = "number-of-diapers";
     static final String POOS = "number-of-poos";
     static final String PEES = "number-of-pees";
+    TextView breastTextView;
+    TextView diapersView;
+    TextView feedsView;
+    TextView poosTextView;
+    TextView peesTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        breastTextView = (TextView) findViewById(R.id.LeftRightBreast);
+        diapersView = (TextView) findViewById(R.id.NumberOfDiapers);
+        feedsView = (TextView) findViewById(R.id.NumberOfFeeds);
+        poosTextView = (TextView) findViewById(R.id.NumberOfPoos);
+        peesTextView = (TextView) findViewById(R.id.NumberOfPees);
     }
-
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -53,27 +62,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayNumberOfFeeds(int feeds) {
-        TextView feedsView = (TextView) findViewById(R.id.NumberOfFeeds);
         feedsView.setText(String.valueOf(feeds));
     }
 
     public void displayNumberOfDiapers(int diapers) {
-        TextView diapersView = (TextView) findViewById(R.id.NumberOfDiapers);
         diapersView.setText(String.valueOf(diapers));
     }
 
     private void displayRightOrLeft(String message) {
-        TextView breastTextView = (TextView) findViewById(R.id.LeftRightBreast);
         breastTextView.setText(message);
     }
 
     private void displayNumberOfPoos(String poos) {
-        TextView poosTextView = (TextView) findViewById(R.id.NumberOfPoos);
         poosTextView.setText(poos);
     }
 
     private void displayNumberOfPees(String pees) {
-        TextView peesTextView = (TextView) findViewById(R.id.NumberOfPees);
         peesTextView.setText(pees);
     }
 
